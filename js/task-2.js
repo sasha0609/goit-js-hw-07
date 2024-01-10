@@ -29,22 +29,14 @@ const list = document.querySelector(".gallery");
 const saveItems = [];
 
 for (let index = 0; index < images.length; index++) {
-  const створюємоЕлементСписку = document.createElement("li");
+  const newElementOfList = document.createElement("li");
   const newImg = document.createElement("img");
   newImg.src = images[index].url;
   newImg.alt = images[index].alt;
 
-  saveItems.push(створюємоЕлементСписку);
+  saveItems.push(newElementOfList);
 
-  list.append(створюємоЕлементСписку);
+  list.append(newElementOfList);
 
-  створюємоЕлементСписку.append(newImg);
+  newElementOfList.append(newImg);
 }
-list.append(
-  saveItems[0],
-  saveItems[1],
-  saveItems[2],
-  saveItems[3],
-  saveItems[4],
-  saveItems[5]
-);
