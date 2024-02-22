@@ -36,7 +36,6 @@ for (let index = 0; index < images.length; index++) {
 
   saveItems.push(newElementOfList);
 
-  list.append(newElementOfList);
-
   newElementOfList.append(newImg);
 }
+list.append(...saveItems);
